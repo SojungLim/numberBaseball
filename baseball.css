@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+}
+.vs-logo img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vs-logo {
+    margin: 100px 0;
+}
+body {
+    background-image : url(bg.jpeg);
+    background-size: cover;
+}
+#start-page {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    line-height : 1.7;
+}
+#start-btn{
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    background-color:#dfbeb9;
+    border: 3px #677d80 solid;
+    border-radius: 25px;
+}
+#number-form {
+    text-align: center;
+    margin-top: 150px;
+}
+#number-form input {
+    width: 270px;
+    line-height: 50px;
+    font-size: larger;
+    border-radius: 10px;
+    border: 3px #677d80 solid;
+}
+#number-form button {
+    width: 90px;
+    line-height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px #677d80 solid;
+}
+#result-page {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    line-height : 1.8;
+}
+#result-page button {
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    width: 270px;
+    height: 70px;
+    background-color:#dfbeb9;
+    border: 3px #677d80 solid;
+    border-radius: 25px;
+    margin-top: 50px;
+}

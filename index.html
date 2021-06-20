@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Baseball</title>
+    <link rel = "stylesheet" href= "baseball.css">
+</head>
+<body>
+    <div class="vs-logo">
+        <img src="vanilla_coding_logo.png">
+    </div>
+    <div id="start-page">
+        <P>The number must be a 3 digit number.<br>
+            Using only digits from 0 - 9.<br>
+            The digits must be all different.
+        </P>
+        <h3>You can try <span>10 times</span></h3>
+        <button id="start-btn" onclick="counting()">S T A R T</button>
+    </div>
+    <form id="number-form" class="hidden">
+        <input type="text"
+               required
+               maxlength="3"
+               minlength="3"
+               placeholder="Write a 3 digit number">
+        <button>Enter</button>  
+    </form>
+    <div id="result-page" class="hidden">
+        <div id="strikeDiv"></div>
+        <div id="ballDiv"></div>
+        <button id="tryagain-btn">TRY AGAIN</button>
+    </div>
+    <script src="baseball.js"></script>
+</body>
+</html>
