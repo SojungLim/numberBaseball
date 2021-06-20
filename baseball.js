@@ -32,7 +32,6 @@ tryAgainBtn.addEventListener("click",goToStart)
 function paintScore() {
     const plusStrikes = strikes.reduce( (acc, cur) => acc + cur,0 );
     const plusBalls = balls.reduce( (acc, cur) => acc + cur,0 );
-    console.log(strikes,balls);
 
     if(strikes!==[0]) {  
         strikeDiv.innerHTML = `${plusStrikes} STRIKE!`;    
@@ -80,7 +79,6 @@ function playgame(event) {
     event.preventDefault();
     numbersFromUser = Array.from(numberInput.value);
     numberInput.value = '';
-    console.log(numbersFromUser);
     numberForm.classList.add(HIDDEN_CLASSNAME);
     resultPage.classList.remove(HIDDEN_CLASSNAME);
     calculateScore();
@@ -105,9 +103,7 @@ function PressStartBtn(event) {
     
     while(randomNumber.length<3) {
         const gernerateNumbers = numbers[Math.floor(Math.random() * numbers.length)]
-        console.log(gernerateNumbers);
         randomNumber.push(gernerateNumbers);
-        console.log(randomNumber);
         if(randomNumber[0]==randomNumber[1]) {                          //중복된 숫자 안생기도록 만든 if문
             randomNumber.pop()
         } else if (randomNumber[0]==randomNumber[2]){
